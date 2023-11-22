@@ -18,11 +18,13 @@ body{
 }
 
 .menu{
-    background-color: black;
-    padding-bottom: 30px;
-    padding-left: 160px;
-    padding-right: 40px;
+    background-color: white;
+    /* padding-bottom: 30px; */
+    /* padding-left: 160px; */
+    /* padding-right: 40px; */
+    padding: 32px;
     display: flex;
+    justify-content: space-around;
 }
 
 .menu li{
@@ -31,9 +33,10 @@ body{
     
 }
 
+nav.menu img {padding: 0 10px 10px 10px;}
+
 .menu li a{
-    color: white;
-    background-color: black;
+    color: black;
     border-radius: 6px;
     margin-right: 30px;
     text-decoration: none;
@@ -45,24 +48,28 @@ a{
     text-decoration: none;
 }
 
+li{
+    display: block;
+}
+
 .menu li a:hover{
     color:black;
     background-color: rgb(255, 223, 88);
     border-radius: 6px;
     padding: 8px;
+    transition: all 0.5s ease;
 }
 
 .menu img{
 float: left;
 margin-left: 30px;
-width: 40px;
+width: 88px;
 display: block;
 margin-top: 30px;
 }
 
-.redes{
-    float: right;
-   display: column ;
+div.redes img {
+    width: 50px;
 }
 
 /*home*/
@@ -76,22 +83,53 @@ margin-top: 30px;
     font-size: 54px;
 }
 
-.frases h2 {
-    flex-direction: row;
-    text-align: center;
-    padding: 94px 0px 0px 0px;
-}
-
-.frases h1 {
-    flex-direction: row;
-    text-align: center;
-    margin: 0px;
-}
-
-section.home h2, h1 ,img {
+section.home {
     display: flex;
     flex-direction: row;
-    justify-content: normal;
+    justify-content: center;
+    margin: 6vw;
+}
+
+section.home div.frases {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    margin: 0 0 0 10vw;
+}
+
+section.home div.frases h1,section.home div.frases h2 {
+    width: 100%;
+    margin: 6px auto;
+    text-align: center;
+}
+
+section.home div.imagem {
+    display: flex;
+    justify-content: start;
+}
+
+section.login div.botao{
+   align-items: center;
+}
+
+button {
+    width: 94px;
+}
+
+div.frases {
+    align-items: center;
+}
+
+div.frases button {
+    border-radius: 11px;
+    background-color: white;
+}
+
+div.frases button:hover {
+    background-color: rgb(255, 223, 88);
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
   /*quem somos*/
@@ -145,6 +183,8 @@ section.home h2, h1 ,img {
     height: 250px;
     
 }
+
+
 
 
 /*login*/
@@ -306,13 +346,6 @@ table{
     margin-top: 150px;
 }
 
-.imagem{
-    margin-bottom: 10px;
-    width: 90%;
-    float: left;
-    margin-left: 150px;
-}
-
 .imagem img{
     margin-top: 50px;
     float: right;
@@ -438,6 +471,11 @@ table{
 }
 
 /*pq-adotar*/
+
+.texto1, .texto2{
+    -webkit-animation: slide-in-bck-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bck-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
 .texto1 table{
    padding: 100px;
@@ -739,6 +777,7 @@ margin-top: 100px;
      color: white;
  }
 
+ 
 
  /*especificação*/
 
@@ -760,5 +799,14 @@ margin-top: 100px;
  .especificacao h1{
     font-size: 40px;
     margin-top: 0;
-    
  }
+
+
+ @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+ @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+ @-webkit-keyframes slide-in-bck-left{0%{-webkit-transform:translateZ(700px) translateX(-400px);transform:translateZ(700px) translateX(-400px);opacity:0}100%{-webkit-transform:translateZ(0) translateX(0);transform:translateZ(0) translateX(0);opacity:1}}@keyframes slide-in-bck-left{0%{-webkit-transform:translateZ(700px) translateX(-400px);transform:translateZ(700px) translateX(-400px);opacity:0}100%{-webkit-transform:translateZ(0) translateX(0);transform:translateZ(0) translateX(0);opacity:1}}
