@@ -8,8 +8,8 @@
     text-decoration: none;
 }
 
-/*cabeçalho padrão*/
 
+/*cabeçalho padrão*/
 
 body{
     background-image: linear-gradient(90deg, rgba(178,216,216), rgba(0,76,76));
@@ -18,32 +18,41 @@ body{
 }
 
 .menu{
-    background-color: black;
+    background-color: white;
     /* padding-bottom: 30px; */
     /* padding-left: 160px; */
     /* padding-right: 40px; */
     padding: 32px;
     display: flex;
+    justify-content: space-around;
+    margin: 0 0 10vw;
 }
 
 .menu li{
     float: left;
     margin-top: 40px;
-    
+}
+
+nav.menu img {
+    padding: 0 10px 10px 10px;
 }
 
 .menu li a{
-    color: white;
-    background-color: black;
+    color: black;
     border-radius: 6px;
     margin-right: 30px;
     text-decoration: none;
     padding: 8px;
     font-family:'League Spartan', sans-serif;
+    
 }
 
 a{
     text-decoration: none;
+}
+
+li{
+    display: block;
 }
 
 .menu li a:hover{
@@ -57,36 +66,21 @@ a{
 .menu img{
 float: left;
 margin-left: 30px;
-width: 40px;
+width: 88px;
 display: block;
 margin-top: 30px;
+
 }
 
-.redes{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    vertical-align: middle;
-    align-items: center;
-}
-
-header.imagem-home {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    background-color: #000;
-}
-
-header.imagem-home img {
-    width: 94px;
-    margin: 14px 0 14px 50px;
+#logo img{
+    -webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 div.redes img {
     width: 50px;
 }
+
 
 /*home*/
 
@@ -104,6 +98,8 @@ section.home {
     flex-direction: row;
     justify-content: center;
     margin: 6vw;
+    -webkit-animation: slide-in-bck-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-bck-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 section.home div.frases {
@@ -488,6 +484,11 @@ table{
 
 /*pq-adotar*/
 
+.texto1, .texto2{
+    -webkit-animation: slide-in-bck-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bck-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 .texto1 table{
    padding: 100px;
   
@@ -505,6 +506,7 @@ table{
 .texto1 p{
     font size: 30px;
     margin-left: 55px;
+    font-family: 'League Spartan', sans-serif;
 }
 
 .texto2 table{
@@ -520,11 +522,13 @@ table{
  .texto2 p{
      font size: 30px;
      margin-left: 55px;
+     font-family: 'League Spartan', sans-serif;
  }
 
+ 
  /*adote*/
 
-.opcoes-flex{
+ .opcoes-flex{
     display: flex;
     flex-direction: row;
     margin: 0px auto;
@@ -541,6 +545,33 @@ table{
     cursor: pointer;
 }
 
+.row{
+    justify-content: center;
+    margin: 10vw 10vw 10vw 10vw;
+    text-align: center;
+    justify-content: space-evenly;
+    /* margin-top: 0; */
+    /* margin-right: 0; */
+    /* margin-bottom: 0; */
+    display: flex;
+}
+
+.col-lg-4 h2{
+    font-family: 'Chewy', cursive;
+}
+
+.col-lg-4 p{
+    font-family:'League Spartan', sans-serif;
+}
+
+.col-lg-4 .btn-secondary:hover{
+    color: #fff;
+    background-color: rgb(255, 223, 88);
+    border-color: #fff;
+
+}
+
+    
 
 /*cadastro*/
 
@@ -812,5 +843,13 @@ margin-top: 100px;
     margin-top: 0;
  }
 
- @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
 
+ @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+
+ @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+ @-webkit-keyframes slide-in-bck-left{0%{-webkit-transform:translateZ(700px) translateX(-400px);transform:translateZ(700px) translateX(-400px);opacity:0}100%{-webkit-transform:translateZ(0) translateX(0);transform:translateZ(0) translateX(0);opacity:1}}@keyframes slide-in-bck-left{0%{-webkit-transform:translateZ(700px) translateX(-400px);transform:translateZ(700px) translateX(-400px);opacity:0}100%{-webkit-transform:translateZ(0) translateX(0);transform:translateZ(0) translateX(0);opacity:1}}
+ @-webkit-keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes scale-up-center{0%{-webkit-transform:scale(.5);transform:scale(.5)}100%{-webkit-transform:scale(1);transform:scale(1)}}
