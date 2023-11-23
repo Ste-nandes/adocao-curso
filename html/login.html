@@ -8,55 +8,66 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chewy&family=League+Spartan:wght@500&display=swap" rel="stylesheet">
-    </head>
+    <style>
+        .especificacao option, input, select{
+    font-family:  'League Spartan', sans-serif;
+    background-color:  rgb(255, 223, 88);
+    border-radius: 10px;
+    padding: 6px;
+    width: 100%;
+    height: 2rem;
+ }
+    </style>
+
+</head>
 
     <body>
 
         <section class="Cabecalho">
            
-                <nav class="menu">
-                        <img src="imagens/Cat & Dog.png">
-                    <ul>
-                        <li><a href="home.html">home</a></li>
-                        <li><a href="pq-adotar.html">Por que adotar?</a></li>
-                        <li><a href="cadastro.html">cadastre um animal</a></li>
-                        <li><a href="adote.html">adote</a></li>
-                        <li><a href="quemsomos.html">quem somos?</a></li>
-                        <li><a href="denuncie.html">denuncie</a></li>
-                    </ul>
-                <div class="redes">
-                    <a href="#" class="face"><img src="imagens/logo facebook.png"></a>
-                    <a href="#" class="insta"><img src="imagens/instagram logo.png"></a>
-                    <a href="#" class="twitter"><img src="imagens/twitter logo.png"></a>
-                </div>  
-            </nav>
-        </header>
-        </section>
+            <nav class="menu">
+                <div id="logo">
+                    <img src="imagens/Cat & Dog.png">
+                </div>
+                
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="pq-adotar.html">Por que adotar?</a></li>
+                    <li><a href="cadastro.html">cadastre um animal</a></li>
+                    <li><a href="adote.html">adote</a></li>
+                    <li><a href="quemsomos.html">quem somos?</a></li>
+                    <li><a href="denuncie.html">denuncie</a></li>
+                </ul>
+            <div class="redes">
+                <a href="#" class="face"><img src="imagens/logo facebook.png"></a>
+                <a href="#" class="insta"><img src="imagens/instagram logo.png"></a>
+                <a href="#" class="twitter"><img src="imagens/twitter logo.png"></a>
+            </div>  
+        </nav>
+    </header>
+    </section>
 
     
-        <main class="principal">
-            <img src="imagens/cachorrinho pintado.png">
+        <main>
             
-            <div class="login">
-                    <h2>
+  
+            <section class="esquerda">
+                <img src="imagens/cachorrinho pintado.png" />
+                    <!--<h2>
                         Encontre a melhor companhia.
                     </h2>
-                    <h1>Adote um aumigo!</h1>
-            </div>
-
-            <table>
-            <td>
-                <div class="input1" align="center">
-                    <h1>Como podemos te ajudar?</h1><br>
-                    <input type="checkbox"> Quero divulgar animaizinhos para adoção.<br><br>
-                    <input type="checkbox"> Quero adotar um cachorro ou gato.<br><br>
-                    <input type="checkbox"> Quero contribuir com o projeto.<br><br>
-                    <input type="checkbox"> Quero encontrar um animal perdido.<br>
-                </div>
-            </td>
-            <td>
-                <div class="input2">
-                    <form>
+                    <h1>Adote um aumigo!</h1>-->
+                <div class="formulario">
+                    <form action="_self" class="d-flex flex-column-reverse" >
+                        <div class="principal">
+                <h1>Como podemos te ajudar?</h1>
+                <div class="checkbox" ><input type="checkbox"> <div class="label"> divulgar animaizinhos para adoção.</div></div>
+                <div class="checkbox" ><input type="checkbox"> <div class="label"> adotar um cachorro ou gato.</div></div>
+                <div class="checkbox" ><input type="checkbox"> <div class="label"> contribuir com o projeto.</div></div>
+                <div class="checkbox" ><input type="checkbox"> <div class="label"> encontrar um animal perdido.</div></div>
+                   
+            </div>            
+                 <div class="estado">
                     <select>
                         <option>Selecione o estado</option>
                         <option>Acre</option>
@@ -85,21 +96,28 @@
                         <option>Santa Catarina</option>
                         <option>São Paulo</option>
                         <option>Sergipe</option>
-                        <option>Tocantins</option>   
-                    </select>
-                  
-                        <input type="text" placeholder="Cidade" required><br>
-                        <input type="text" placeholder="Site" required><br>
-                        <input type="text" placeholder="Whatsapp" required><br>
-                        <input type="text" placeholder="E-mail" required><br>
-                        <input type="password" placeholder="Senha" required>
-                        <button>Cadastre-se</button>
-                        <div id="limpar">
-                            <input type="reset" value="limpar">
+                        <option>Tocantins</option>  
+                        </select> 
                         </div>
-                        <a href="senha.html"><p>esqueci minha senha</p></a>
-                    </form>
-                    </div>
-                        
-                </td>
-            </table>
+                        <div class="contato">           
+                            <input type="text" placeholder="Cidade" required>
+                            <input type="text" placeholder="Site" required>
+                            <input type="text" placeholder="Whatsapp" required>
+                            <input type="text" placeholder="E-mail" required>
+                            <input type="password" placeholder="Senha" required>
+                            <button>Cadastre-se</button> 
+                    </div> 
+                </form>    
+            </div>
+            </section>
+          
+           
+
+                            <!--<div id="botao-limpar">
+                                <input type="reset" value="limpar">
+                            </div>
+                            
+                            <div id="botao-senha"><a href="senha.html">
+                                <p>esqueci minha senha</p></a>
+                            </div>-->            
+               
