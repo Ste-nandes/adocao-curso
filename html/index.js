@@ -140,7 +140,29 @@ console.log(outroNome.trim());
 const frase = "hoje comi cenoura";
 console.log(frase.includes("cenoura")); //true
 console.log(frase.includes("batata")); //false  */
-
+/* 
 const frase = "hoje comi cenoura, adoro cenoura";
 const novaFrase = frase.replaceAll("cenoura", "batata");
 console.log(novaFrase);
+ */
+
+const listaDeCompras = ["batata", "alface", "queijo"];
+
+const listaDeNumerosMega =  [2, 13, 26, 35, 41, 60];
+
+console.log(listaDeCompras);
+listaDeCompras.push("cenoura");
+listaDeCompras[4] = "papel";
+listaDeCompras[listaDeCompras.length] = "cebola";
+listaDeCompras[1] = "tomate";
+//listaDeCompras.pop()//
+
+listaDeCompras.splice(3, 2);
+
+console.log(listaDeCompras[0]);
+console.log(listaDeCompras[1]);
+console.log(listaDeCompras[2]);
+console.log(listaDeCompras[3]);
+
+console.log(listaDeCompras.lenght);
+
