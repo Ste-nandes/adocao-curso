@@ -1,146 +1,143 @@
-/* console.log(prompt("qual é o seu nome?"));
+/* //this is a js file
 
-var variavel = 100;
-const VariavelConstante = 200;
+let condicao1 = true;
+let condicao2 = false;
 
-variavel = 400;
-VariavelConstante = 600;
+if(condicao1){
+    //como o valor da condição é TRUE,
+    //o código desse bloco é executado.
+    console.log('entrei no if 1!');
+}
+    //como o valor da condição é false,
+    //o código desse bloco NÃO é executado.
+if(condicao2){
+    console.log('entrei no if 2!');
+}
 
-const CorDeFundo = "#fefefe";
+var num1 = 5;
+var num2 = 4;
 
+if(num1 === num2){
+    console.log('São iguais!')
+} else{
+    if(num1 > num2){
+        console.log('são diferentes e num1 é maior.')
+    }else{
+        console.log('são diferentes e num2 é maior.')  
+    }  
+}
 
-const nome = "Stephanie";
-const idade = 16;
+var paisDeOrigem = "Brasil";
 
-console.log("Olá!", "Meu nome é", nome, "e eu tenho", idade, "anos");
-Numbers são os tipos que representam números
-
-const altura = 1.79;
-const temperatura = -20;
-
-Strings: são os tipos que representam conjunto de caracteres(texto)
-const nome = "yuzo";
-var idade = "23";
-
-idade = 4300;
-
-
-Variáveis Booleanas: São variáveis que só assumem os valores true or false
-
-/var souUmBoolean = true;
-console.log(souUmBoolean);
-souUmBoolean = false;
-console.log(souUmBoolean);  */
-
-//atividade//
-
-/* var nome = "Stéphanie";
-var sobreNome = "Fernandes";
-var idade = 16;
-var estudo = true;
-console.log("Nome:", nome, " Sobrenome:", sobreNome, " Idade:", idade, " Estuda?", estudo);
-
-console.log("Nome:" + nome + " Sobrenome:" + sobreNome + " Idade:" + idade + " Estuda? " + estudo);
-
-var todoTexto = "Nome:" + nome + " Sobrenome:" + sobreNome + " Idade:" + idade + " Estuda? " + estudo;
-
-console.log(todoTexto);          
+switch (paisDeOrigem) {
+    case "Brasil":
+        console.log('brasileiro')
+        break;
+    case "EUA":
+    console.log('americano');
+    break;
+ default:
+    console.log('desconhecido');
+        break;
+}
 
 
-console.log(typeof(nome));
-console.log(typeof(sobreNome));
-console.log(typeof(idade));
-console.log(typeof(estudo)); */
+var pokemon = "charmander";
+
+if(pokemon === "bulbasauro"){
+    console.log("Planta e veneno.")
+}else{
+    if(pokemon === "charmander"){
+        console.log("Fogo.")
+    }else{
+        if(pokemon === "squirtle")
+        console.log("água")
+    }
+}
+
+switch (pokemon) {
+    case "bulbasauro":
+        console.log("planta e veneno")
+        break;
+    case "charmander":
+        console.log("fogo")
+        break;
+    case "squirtle":
+        console.log("água")
+    default:
+        console.log("desconhecido")
+        break;
+}
+*/
+
+/* var lista = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+
+lista.forEach(element => {
+    console.log(element)
+});
+
+for (const element of lista) {
+    console.log(element)
+}
+
+for (let index = 0; index < array.length; index++) {
+    const element = lista[index];
+    console.log(element);
+    
+} */
 /* 
-const idadeNumero = 23;
-const idadeTexto = idadeNumero.toString();
+var i = 0;
+while(1 < 10){
+    console.log(i);
+    i = i +1;
+} */
 
-console.log(typeof idadeNumero);
-console.log(typeof idadeTexto); */
-
-/* const idadeTexto = "23";
-const idadeNumero = Number(idadeTexto);
-
-console.log(typeof idadeTexto);
-console.log(typeof idadeNumero); */
-
-/* 
-var n1 = 10;
-var n2 = 5;
-var n3 = 3;
-
-var soma, subtracao, divisao, multiplicacao;
-
-soma = n1 + n2;
-subtracao = n1 - n2;
-divisao = n1 / n2;
-multiplicacao = n1 * n2;
-
-console.log(soma);
-console.log(subtracao);
-console.log(divisao);
-console.log(multiplicacao); */
-
-/*var numero = 7;
-
-console.log(numero % 2);*/
+/* var numero = Number(prompt("digite um número."));
+console.log(numero); */
 
 
-/* var n1 = 2;
-var n2 = 44456;
-var n3 = 2;
-var n4 = 3; */
 
-/* console.log(n1 == n2);
-console.log(n1 == n3);
+/* function calcularArea(altura = 10, largura = 20) {
+    var area = altura * largura;
+    return (area);
+}
 
-console.log(n1 !== n2);
-console.log(n1 !== n3);  */
+function somaArea(largura1, largura2, altura1, altura2) {
+    var area1 = calcularArea(largura1, altura1);
+    var area2 = calcularArea(largura2, altura2);
+    return (area1 + area2);
+} 
 
-/* console.log(n1 > n3)
-console.log(n1 >= n3) */
-
-/* console.log( n1 === n2 && n1 === n3);
-console.log(n1 === n2 || n1 === n3); */
-
-/* var a = true;
-var b = false;
-var c = true; */
-
-/* console.log(a && b);
-console.log(b && c);
-console.log(a && c);
-console.log(a && b && c);
-
-console.log(a || b);
-console.log(b || c);
-console.log(a || c);
-console.log(a || b || c); */
-
-/* console.log(!a); */
-
-var nome = "DSAJDFIJA";
-var outroNome = "            STEFERNANDES              ";
-var idade = 23;
-var deMaior = true;
-var anoFuturo = 2050;
-anoAtual = 2023;
-var idadeFutura = anoFuturo - idade;
-
-/* console.log("Nome:" + nome);
-console.log("idade: " + idade)
-console.log("É maior de idade? " + (idade >= 18)); 
-console.log("Idade em 2050: " + (idade + (2050 - anoAtual))); 
+console.log(somaArea(10,20,30,40));*/
 
 
-console.log(nome.length);
-console.log(nome.toLowerCase());
-console.log(outroNome.trim());
+function imprimeNomes(nome){
+    console.log(nome);
+}
+imprimeNomes("nome1");
+imprimeNomes("nome2");
+imprimeNomes("nome3");
 
-const frase = "hoje comi cenoura";
-console.log(frase.includes("cenoura")); //true
-console.log(frase.includes("batata")); //false  */
 
-const frase = "hoje comi cenoura, adoro cenoura";
-const novaFrase = frase.replaceAll("cenoura", "batata");
-console.log(novaFrase);
+function imprimeNomesComReturn(nome) {
+    return nome
+}
+
+console.log(imprimeNomesComReturn("nome1"));
+console.log(imprimeNomesComReturn("nome2"));
+console.log(imprimeNomesComReturn("nome3"));
+
+
+
+var lista = [1,2,3,4,5];
+
+function recebeArray(lista = []){
+    var arrayFinal = [];
+    arrayFinal[0] = lista[lista.lenght];
+    arrayFinal[1] = lista[0];
+    console.log(arrayFinal);
+}
+
+var lista = [1,2,3,4,5,6,7,8,9];
+recebeArray(lista);
+
