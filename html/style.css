@@ -1,6 +1,6 @@
 *{
     margin: 50;
-    padding: 50;
+    /* padding: 50px; */
     font-size: 18px;
     font-family:'Chewy', cursive;
     border: none;
@@ -214,10 +214,10 @@ div.frases button:hover {
     background-color: white;
     border-radius: 10px;
     padding: 6px;
-    height: 2rem;
     display: flex;
     flex-direction: column;
     margin: 1vw 0 0;
+    width: 14vw;
 }
 
 .estado {
@@ -433,17 +433,23 @@ table{
 
 .col-lg-4 h2{
     font-family: 'Chewy', cursive;
+    font-size: 34px;
+   
 }
 
-.col-lg-4 p{
-    font-family:'League Spartan', sans-serif;
+.col-lg-4 p {
+    font-family: 'League Spartan', sans-serif;
+    padding: 10px 11rem; 
+    font-size: 22px;
 }
 
-.col-lg-4 .btn-secondary{
-    color:black;
+
+.col-lg-4 .btn-secondary {
+    color: black;
     background-color: white;
     border: none;
-
+    border-radius: 23px;
+    padding: 13px;
 }
 
 .col-lg-4 .btn-secondary:hover{
@@ -512,114 +518,7 @@ margin-top: 30px;
 
 /*cadastro*/
 
-.cadastro{
-    padding: 0;
-}
 
-.cadastro h1{
-    font-size: 50px;
-    text-align: center;
-    margin-left: 150px;
-    margin-top: 0;
-}
-
-.cadastro h2{
-    margin-left: 150px;
-    font-size: 25px;
-}
-
-.cadastro textarea{
-    margin-left: 140px;
-}
-
-.cadastro select{
-    font-family: 'League Spartan', sans-serif;
-    margin-left: 100px;
-    border-radius: 15px;
-    height: 30px;
-    width: 130px;
-    text-align: center;
-}
-
-.cadastro select:hover{
-    cursor: pointer;
-}
-
-.cadastro option{
-    font-family: 'League Spartan', sans-serif;
-}
-
-.cadastro p{
-    margin-left: 150px;
-    font-family: 'League Spartan', sans-serif;
-    font-size: 20px;
-}
-
-.cadastro img{
-    width: 500px;
-    float: left;
-    margin-left: 200px;
-    margin-top: 0;
-}
-
-.cadastro input{
-    margin-left: 370px;
-    margin-top: 50px;
-    font-family: 'League Spartan', sans-serif;
-    border-radius: 15px;
-    height: 30px;
-    text-align: center;
-    align-items: center;
-    border-top: 30px;
-}
-
-.cadastro input:hover{
-    cursor: pointer;
-}
-
-.cadastro button{
-    font-family: 'League Spartan', sans-serif;
-    border-radius: 10px;
-    background-color: white;
-    height: 30px;
-    width: 150px;
-    text-decoration: none;
-    margin-left: 145px;
-}
-
-.informacoes{
-    margin-left: 150px;
-}
-
-.informacoes button:hover{
-    background-color: rgb(255, 223, 88);
-    cursor: pointer;
-}
-
-.informacoes select{
-    margin-left: 10px;
-}
-
-
-.informacoes h2 textarea{
-    margin-left: 150px;
-}
-
-.mais h2{
-    margin-right: 120px ;
-}
-
-.mais textarea{
-    margin-right: 110px ;
-    max-width: 400px;
-    max-height: 200px;
-    
-}
-
-.mais button{
-    margin-right: 110px ;
-    
-}
 /*denuncie*/
 
 .denuncie{
@@ -691,22 +590,16 @@ margin-top: 30px;
     animation: slide-in-bck-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-div.filtros{
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 60%;
-    height: 95px;
-}
 
 .animais{
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    /* justify-content: flex-start; */
     width: 56%;
     margin: 0px auto;
+    column-count: 3;
+    columns: 3;
 }
 
 .animais td{
@@ -729,22 +622,14 @@ div.filtros{
     width: 17vw;
 }
 
-div.filtros{
+div.filtros {
     background-color: white;
     padding: 30px;
     border-radius: 10px;
     width: 56%;
-    height: 89px;
 }
 
-.especificacao option, input, select {
-    font-family: 'League Spartan', sans-serif;
-    background-color: rgb(255, 223, 88);
-    /* margin-bottom: 30px; */
-    border-radius: 10px;
-    padding: 6px;
-    width: 22%;
-}
+
 
 .nome {
     display: flex;
@@ -754,12 +639,12 @@ div.filtros{
 }
 
 .cachorro-gato button {
-    width: 119px;
-    height: 33px;
+    width: 120px;
+    height: 34px;
     border-radius: 10px;
     background-color:  rgb(255, 223, 88);
     font-family: 'League Spartan';
-    margin: 4% 0 4% 31%;
+    margin: 1rem auto;
 }
 
 .cachorro-gato button:hover{
@@ -772,10 +657,14 @@ div.filtros{
 .cachorro-gato{
     background-color: white;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 0.7rem;
+    width: 28%;
 }
 
 .cachorro-gato img {
-    width: 17vw;
+    width: 15vw;
     border-radius: 10px 10px 0 0;
 }
 
@@ -795,12 +684,6 @@ option {
 
  }
 
-.especificacao option, input, select{
-    font-family:  'League Spartan', sans-serif;
-    background-color:  rgb(255, 223, 88);
-    border-radius: 10px;
-    padding: 6px;
- }
 
  .especificacao h1{
     font-size: 40px;
